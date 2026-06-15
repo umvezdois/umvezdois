@@ -1,0 +1,1743 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)file:///C:/Users/MarisaSantos/Downloads/balcao-cidadao_7.html -->
+<html lang="pt"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Balcão das Empresas e do Cidadão — Tratamos da burocracia por si</title>
+<meta name="description" content="Mais de 200 serviços para cidadãos e empresas num único local. Marcação online rápida e fácil. Atendimento presencial, por videochamada ou pedido de contacto.">
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link href="./Balcão das Empresas e do Cidadão — Tratamos da burocracia por si_files/css2" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --blue:#E8500A;--blue-d:#C94008;--blue-l:#FEF0E8;
+  --green:#059669;--green-l:#ECFDF5;
+  --amber:#D97706;--amber-l:#FFFBEB;
+  --red:#DC2626;--red-l:#FEF2F2;
+  --navy:#0F0F0F;--slate:#475569;--slate-l:#94A3B8;
+  --border:#E2E8F0;--bg:#F8F8F6;--white:#FFFFFF;
+  --orange:#E8500A;--orange-d:#C94008;--orange-l:#FEF0E8;
+  --ff:'Plus Jakarta Sans',system-ui,sans-serif;
+  --max:1200px;--g:clamp(1rem,4vw,1.75rem);
+  --r:10px;--r-sm:6px;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--ff);color:var(--navy);background:var(--bg);line-height:1.6;overflow-x:hidden}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--g)}
+a{text-decoration:none;color:inherit}
+img{max-width:100%}
+button{font-family:var(--ff);cursor:pointer}
+input,select,textarea{font-family:var(--ff)}
+
+/* ── UTILITIES ───────────────────────────────── */
+.badge{display:inline-flex;align-items:center;gap:.3rem;font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.25rem .6rem;border-radius:20px}
+.badge-blue{background:#FEF0E8;color:var(--orange)}
+.badge-green{background:var(--green-l);color:var(--green)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font-size:.88rem;font-weight:600;padding:.75rem 1.5rem;border-radius:var(--r-sm);border:none;transition:all .2s;cursor:pointer;text-decoration:none}
+.btn-primary{background:var(--blue);color:#fff}
+.btn-primary:hover{background:var(--blue-d);transform:translateY(-1px);box-shadow:0 4px 16px rgba(26,86,219,.3)}
+.btn-outline{background:transparent;border:2px solid var(--border);color:var(--navy)}
+.btn-outline:hover{border-color:var(--orange);color:var(--orange)}
+.btn-white{background:#fff;color:var(--blue)}
+.btn-white:hover{background:var(--blue-l)}
+.btn-green{background:var(--green);color:#fff}
+.btn-green:hover{background:#047857}
+.btn-lg{font-size:1rem;padding:.9rem 2rem;border-radius:var(--r)}
+.hidden{display:none!important}
+.chip{display:inline-flex;align-items:center;gap:.35rem;font-size:.75rem;font-weight:600;padding:.3rem .75rem;border-radius:20px;background:rgba(255,255,255,.15);color:#fff}
+
+/* ── NAV ─────────────────────────────────────── */
+#nav{position:sticky;top:0;z-index:200;background:#fff;border-bottom:1px solid var(--border);box-shadow:0 1px 8px rgba(0,0,0,.05)}
+.nav-inner{display:flex;align-items:center;gap:1.5rem;height:64px}
+.nav-logo{display:flex;align-items:center;gap:.6rem;font-size:1rem;font-weight:800;color:var(--navy);flex-shrink:0}
+.nav-logo-icon{width:32px;height:32px;background:var(--blue);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:.9rem}
+.nav-links{display:flex;gap:1.5rem;list-style:none;margin-left:.5rem}
+.nav-links a{font-size:.82rem;font-weight:500;color:var(--slate);transition:color .2s}
+.nav-links a:hover{color:var(--orange)}
+.nav-actions{margin-left:auto;display:flex;align-items:center;gap:.75rem}
+.nav-wa{display:flex;align-items:center;gap:.4rem;font-size:.8rem;font-weight:600;color:#25D366;padding:.4rem .9rem;border:1.5px solid #25D36620;border-radius:20px;background:#25D36608;transition:all .2s}
+.nav-wa:hover{background:#25D36615}
+.nav-burger{display:none;background:none;border:none;padding:.4rem;cursor:pointer}
+.nav-burger span{display:block;width:22px;height:2px;background:var(--navy);margin:5px 0;transition:.3s}
+/* section label orange */
+.section-label{font-size:.7rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--orange);margin-bottom:.4rem}
+
+/* ── HERO ────────────────────────────────────── */
+#hero{background:linear-gradient(135deg,#0A0A0A 0%,#1A1A1A 55%,#2D1200 100%);min-height:540px;display:flex;align-items:center;padding:4rem var(--g) 3rem;position:relative;overflow:hidden}
+.hero-bg-pattern{position:absolute;inset:0;opacity:.04;background-image:radial-gradient(circle at 25% 50%,#fff 1px,transparent 1px),radial-gradient(circle at 75% 20%,#fff 1px,transparent 1px);background-size:40px 40px}
+.hero-inner{position:relative;z-index:2;max-width:680px}
+.hero-chips{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.5rem}
+.hero-h1{font-size:clamp(2rem,5vw,3.2rem);font-weight:800;line-height:1.15;color:#fff;margin-bottom:1rem}
+.hero-h1 em{font-style:normal;color:#FF6B1A}
+.hero-sub{font-size:1.05rem;color:rgba(255,255,255,.65);margin-bottom:2rem;max-width:520px;line-height:1.7}
+.hero-ctas{display:flex;gap:1rem;flex-wrap:wrap}
+.hero-stats{margin-top:3rem;display:flex;gap:2.5rem;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.1);padding-top:2rem}
+.h-stat strong{display:block;font-size:1.6rem;font-weight:800;color:#fff;line-height:1}
+.h-stat span{font-size:.75rem;color:rgba(255,255,255,.45);margin-top:.2rem}
+
+/* ── SEARCH BAR ──────────────────────────────── */
+#search-section{background:#fff;border-bottom:1px solid var(--border);padding:1.25rem var(--g);position:sticky;top:64px;z-index:150}
+.search-bar{display:flex;align-items:center;gap:.75rem;background:var(--bg);border:2px solid var(--border);border-radius:var(--r);padding:.6rem .75rem 0.6rem 1rem;transition:border-color .2s;max-width:640px}
+.search-bar:focus-within{border-color:var(--orange);background:#fff}
+.search-bar svg{color:var(--slate-l);flex-shrink:0}
+.search-bar input{flex:1;border:none;background:transparent;font-size:.92rem;color:var(--navy);outline:none}
+.search-bar input::placeholder{color:var(--slate-l)}
+#search-results{position:absolute;top:100%;left:0;right:0;background:#fff;border:1px solid var(--border);border-top:none;border-radius:0 0 var(--r) var(--r);box-shadow:0 8px 24px rgba(0,0,0,.1);max-height:360px;overflow-y:auto;z-index:300;padding:.5rem}
+.search-result-item{display:flex;align-items:center;gap:.75rem;padding:.65rem .75rem;border-radius:var(--r-sm);cursor:pointer;transition:background .15s}
+.search-result-item:hover{background:#FEF0E8}
+.sri-cat{font-size:.65rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--slate-l)}
+.sri-name{font-size:.88rem;font-weight:600;color:var(--navy)}
+
+/* ── CATEGORIES ──────────────────────────────── */
+#categorias{padding:3.5rem var(--g)}
+.section-label{font-size:.7rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--blue);margin-bottom:.4rem}
+.section-title{font-size:clamp(1.5rem,3vw,2rem);font-weight:800;color:var(--navy);line-height:1.2;margin-bottom:.5rem}
+.section-sub{font-size:.95rem;color:var(--slate);max-width:540px;line-height:1.65}
+.cats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:2.5rem}
+.cat-card{background:#fff;border:2px solid var(--border);border-radius:var(--r);padding:1.5rem;cursor:pointer;transition:all .2s;position:relative;overflow:hidden}
+.cat-card::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:var(--cat-color,var(--blue));transform:scaleY(0);transition:transform .2s;transform-origin:bottom}
+.cat-card:hover{border-color:var(--cat-color,var(--orange));box-shadow:0 6px 24px rgba(0,0,0,.08);transform:translateY(-2px)}
+.cat-card:hover::before{transform:scaleY(1)}
+.cat-icon{width:44px;height:44px;border-radius:var(--r-sm);display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin-bottom:1rem;background:var(--cat-bg,#FEF0E8)}
+.cat-name{font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:.3rem}
+.cat-count{font-size:.78rem;color:var(--slate-l)}
+.cat-services-preview{margin-top:.75rem;display:flex;flex-wrap:wrap;gap:.3rem}
+.cat-tag{font-size:.68rem;padding:.2rem .5rem;background:var(--bg);border:1px solid var(--border);border-radius:4px;color:var(--slate)}
+
+/* ── BOOKING MODAL ───────────────────────────── */
+#booking-overlay{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:500;display:flex;align-items:center;justify-content:center;padding:1rem;backdrop-filter:blur(4px)}
+#booking-modal{background:#fff;border-radius:16px;width:100%;max-width:680px;max-height:92vh;overflow-y:auto;box-shadow:0 24px 64px rgba(0,0,0,.2)}
+.bm-header{padding:1.5rem 1.75rem 1.25rem;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;background:#fff;z-index:10;border-radius:16px 16px 0 0}
+.bm-title{font-size:1.05rem;font-weight:700;color:var(--navy)}
+.bm-close{width:32px;height:32px;border-radius:50%;background:var(--bg);border:none;font-size:1.1rem;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .15s;color:var(--slate)}
+.bm-close:hover{background:var(--border)}
+.bm-progress{padding:1rem 1.75rem;background:var(--bg);border-bottom:1px solid var(--border)}
+.progress-steps{display:flex;align-items:center;gap:.25rem}
+.ps{display:flex;align-items:center;gap:.25rem;flex:1}
+.ps-dot{width:28px;height:28px;border-radius:50%;font-size:.72rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .2s}
+.ps-dot.done{background:var(--green);color:#fff}
+.ps-dot.active{background:var(--orange);color:#fff;box-shadow:0 0 0 3px rgba(232,80,10,.2)}
+.ps-dot.pending{background:var(--border);color:var(--slate-l)}
+.ps-label{font-size:.68rem;font-weight:600;color:var(--slate-l);display:none}
+.ps-label.active{color:var(--orange);display:block}
+.ps-line{flex:1;height:2px;background:var(--border);margin:0 .1rem}
+.ps-line.done{background:var(--green)}
+.bm-body{padding:1.75rem}
+.step-heading{font-size:1.1rem;font-weight:700;color:var(--navy);margin-bottom:.3rem}
+.step-sub{font-size:.85rem;color:var(--slate);margin-bottom:1.5rem}
+
+/* step grids */
+.type-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem}
+.type-card{padding:1.1rem;border:2px solid var(--border);border-radius:var(--r);cursor:pointer;transition:all .2s;text-align:center}
+.type-card:hover,.type-card.selected{border-color:var(--orange);background:#FEF0E8}
+.type-card .tc-icon{font-size:1.6rem;margin-bottom:.4rem}
+.type-card .tc-name{font-size:.82rem;font-weight:700;color:var(--navy)}
+.type-card .tc-desc{font-size:.72rem;color:var(--slate);margin-top:.2rem}
+.service-list{display:flex;flex-direction:column;gap:.5rem;max-height:320px;overflow-y:auto}
+.service-list-item{display:flex;align-items:center;gap:.75rem;padding:.75rem 1rem;border:1.5px solid var(--border);border-radius:var(--r-sm);cursor:pointer;transition:all .15s}
+.service-list-item:hover,.service-list-item.selected{border-color:var(--orange);background:#FEF0E8}
+.sli-icon{font-size:1.1rem;width:36px;height:36px;background:var(--bg);border-radius:var(--r-sm);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.sli-name{font-size:.88rem;font-weight:600;color:var(--navy)}
+.sli-cat{font-size:.7rem;color:var(--slate-l)}
+
+/* calendar */
+.cal-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem}
+.cal-nav{width:32px;height:32px;border-radius:50%;border:1.5px solid var(--border);background:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s}
+.cal-nav:hover{border-color:var(--blue);color:var(--blue)}
+.cal-month{font-size:.92rem;font-weight:700;color:var(--navy)}
+.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:3px}
+.cal-day-label{text-align:center;font-size:.65rem;font-weight:700;color:var(--slate-l);padding:.3rem 0;text-transform:uppercase;letter-spacing:.06em}
+.cal-day{aspect-ratio:1;display:flex;align-items:center;justify-content:center;border-radius:var(--r-sm);font-size:.82rem;font-weight:500;cursor:pointer;transition:all .15s;border:1.5px solid transparent}
+.cal-day.empty{cursor:default}
+.cal-day.past{color:var(--border);cursor:not-allowed}
+.cal-day.available:hover{background:#FEF0E8;border-color:var(--orange);color:var(--orange)}
+.cal-day.selected{background:var(--orange);color:#fff;border-color:var(--orange)}
+.cal-day.today{border-color:var(--orange);color:var(--orange);font-weight:700}
+.time-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:.5rem;margin-top:1rem}
+.time-slot{padding:.55rem;border:1.5px solid var(--border);border-radius:var(--r-sm);text-align:center;font-size:.82rem;font-weight:600;cursor:pointer;transition:all .15s}
+.time-slot.available:hover{border-color:var(--orange);background:#FEF0E8;color:var(--orange)}
+.time-slot.selected{background:var(--orange);color:#fff;border-color:var(--orange)}
+.time-slot.taken{background:var(--bg);color:var(--border);cursor:not-allowed;text-decoration:line-through}
+
+/* form */
+.form-row{margin-bottom:1rem}
+.form-row label{display:block;font-size:.78rem;font-weight:600;color:var(--navy);margin-bottom:.35rem}
+.form-row input,.form-row select,.form-row textarea{width:100%;padding:.7rem 1rem;border:1.5px solid var(--border);border-radius:var(--r-sm);font-size:.9rem;color:var(--navy);background:#fff;outline:none;transition:border-color .2s}
+.form-row input:focus,.form-row select:focus,.form-row textarea:focus{border-color:var(--orange)}
+.form-2col{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.bm-footer{padding:1.25rem 1.75rem;border-top:1px solid var(--border);display:flex;gap:.75rem;justify-content:space-between;position:sticky;bottom:0;background:#fff;border-radius:0 0 16px 16px}
+.bm-summary{background:var(--bg);border-radius:var(--r);padding:1rem;margin-bottom:1.25rem;font-size:.84rem}
+.bm-summary-row{display:flex;gap:.5rem;margin-bottom:.4rem;align-items:flex-start}
+.bm-summary-row span:first-child{color:var(--slate-l);min-width:90px;flex-shrink:0}
+.bm-summary-row span:last-child{font-weight:600;color:var(--navy)}
+
+/* confirmation */
+.confirm-box{text-align:center;padding:1rem 0}
+.confirm-icon{width:72px;height:72px;background:var(--green-l);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 1.25rem}
+.confirm-ref{display:inline-block;font-family:monospace;font-size:.9rem;font-weight:700;background:var(--bg);padding:.5rem 1rem;border-radius:var(--r-sm);border:1px solid var(--border);margin-top:.75rem}
+.confirm-info{background:#FEF0E8;border-radius:var(--r);padding:1rem;margin-top:1.5rem;text-align:left}
+.confirm-info p{font-size:.82rem;color:#7A2800;line-height:1.6}
+
+/* ── SERVICE PAGES ───────────────────────────── */
+#service-page{background:#fff;min-height:80vh;padding:3rem var(--g)}
+.sp-back{display:inline-flex;align-items:center;gap:.4rem;font-size:.82rem;font-weight:600;color:var(--blue);margin-bottom:1.5rem;cursor:pointer}
+.sp-grid{display:grid;grid-template-columns:1fr 360px;gap:2.5rem;align-items:start}
+.sp-content h1{font-size:clamp(1.5rem,3vw,2rem);font-weight:800;color:var(--navy);margin-bottom:.5rem}
+.sp-meta{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:1.5rem}
+.sp-meta-item{display:flex;align-items:center;gap:.4rem;font-size:.8rem;color:var(--slate)}
+.sp-desc{font-size:.95rem;color:var(--slate);line-height:1.7;margin-bottom:1.5rem}
+.sp-docs h3{font-size:.9rem;font-weight:700;color:var(--navy);margin-bottom:.75rem}
+.sp-doc-list{list-style:none;display:flex;flex-direction:column;gap:.5rem}
+.sp-doc-list li{display:flex;align-items:center;gap:.5rem;font-size:.84rem;color:var(--slate)}
+.sp-doc-list li::before{content:'📄';font-size:.9rem}
+.sp-card{background:var(--bg);border:1px solid var(--border);border-radius:var(--r);padding:1.5rem;position:sticky;top:100px}
+.sp-price{font-size:1.8rem;font-weight:800;color:var(--navy);line-height:1}
+.sp-price span{font-size:.85rem;font-weight:400;color:var(--slate-l)}
+.sp-card-info{margin:1rem 0;display:flex;flex-direction:column;gap:.6rem}
+.sci{display:flex;align-items:center;gap:.6rem;font-size:.82rem;color:var(--slate)}
+
+/* ── HOW IT WORKS ────────────────────────────── */
+#como-funciona{background:#111111;padding:4rem var(--g)}
+.how-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:2.5rem}
+.how-step{position:relative}
+.how-num{font-size:2.5rem;font-weight:800;color:rgba(255,255,255,.06);line-height:1;margin-bottom:.2rem}
+.how-icon{width:44px;height:44px;border-radius:var(--r-sm);background:rgba(255,255,255,.07);display:flex;align-items:center;justify-content:center;font-size:1.2rem;margin-bottom:.75rem}
+.how-title{font-size:.95rem;font-weight:700;color:#fff;margin-bottom:.35rem}
+.how-desc{font-size:.8rem;color:rgba(255,255,255,.45);line-height:1.6}
+.how-arrow{position:absolute;top:3.5rem;right:-1rem;color:rgba(255,255,255,.15);font-size:1.2rem}
+
+/* ── FAQ ─────────────────────────────────────── */
+#faq{padding:4rem var(--g);background:#fff}
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:2.5rem}
+.faq-item{border:1px solid var(--border);border-radius:var(--r);overflow:hidden}
+.faq-q{padding:1rem 1.25rem;font-size:.9rem;font-weight:600;color:var(--navy);display:flex;justify-content:space-between;align-items:center;cursor:pointer;transition:background .15s;gap:1rem}
+.faq-q .faq-icon{flex-shrink:0;width:24px;height:24px;display:flex;align-items:center;justify-content:center;border-radius:50%;border:1.5px solid var(--border);font-size:.9rem;font-style:normal;transition:transform .25s,background .2s,border-color .2s;line-height:1}
+.faq-a{padding:0 1.25rem;max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s ease;font-size:.84rem;color:var(--slate);line-height:1.65}
+.faq-q:hover{background:var(--bg)}
+.faq-item.open .faq-q{background:#FEF0E8}
+.faq-item.open .faq-q .faq-icon{transform:rotate(45deg);background:var(--orange);border-color:var(--orange);color:#fff}
+.faq-item.open .faq-a{max-height:300px;padding:1rem 1.25rem}
+.faq-q .faq-icon{flex-shrink:0;}
+
+/* ── CONTACT SECTION ─────────────────────────── */
+#contacto-section{background:var(--bg);padding:4rem var(--g);border-top:1px solid var(--border)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+.contact-methods{display:flex;flex-direction:column;gap:.75rem;margin-top:1.5rem}
+.contact-method{display:flex;align-items:center;gap:1rem;padding:1rem 1.25rem;background:#fff;border:1px solid var(--border);border-radius:var(--r);transition:all .2s}
+.contact-method:hover{border-color:var(--orange);box-shadow:0 4px 12px rgba(0,0,0,.06)}
+.cm-icon{width:40px;height:40px;border-radius:var(--r-sm);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+.cm-label{font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--slate-l);margin-bottom:.1rem}
+.cm-value{font-size:.9rem;font-weight:600;color:var(--navy)}
+.contact-form-card{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:2rem}
+.contact-form-card h3{font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:.3rem}
+.contact-form-card p{font-size:.82rem;color:var(--slate);margin-bottom:1.5rem}
+
+/* ── MAP SECTION ─────────────────────────────── */
+#mapa-section{height:280px;background:var(--bg);border-top:1px solid var(--border);position:relative;overflow:hidden}
+.map-placeholder{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(135deg,#e0e7ff,#ede9fe);gap:.5rem}
+.map-pin{font-size:2.5rem}
+.map-address{font-size:.85rem;font-weight:600;color:var(--navy)}
+.map-link{font-size:.8rem;color:var(--blue);text-decoration:underline;cursor:pointer}
+
+/* ── ADMIN PANEL ─────────────────────────────── */
+#admin-panel{background:var(--bg);min-height:100vh}
+.admin-layout{display:grid;grid-template-columns:240px 1fr;min-height:100vh}
+.admin-sidebar{background:#111111;padding:1.5rem;display:flex;flex-direction:column;gap:.25rem}
+.admin-logo{font-size:.95rem;font-weight:800;color:#fff;padding:.5rem 0 1.5rem;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:.75rem}
+.admin-logo small{display:block;font-size:.65rem;font-weight:400;color:rgba(255,255,255,.3);letter-spacing:.1em;text-transform:uppercase;margin-top:.1rem}
+.admin-nav-item{display:flex;align-items:center;gap:.7rem;padding:.65rem .85rem;border-radius:var(--r-sm);font-size:.82rem;font-weight:500;color:rgba(255,255,255,.5);cursor:pointer;transition:all .2s}
+.admin-nav-item:hover{background:rgba(255,255,255,.07);color:#fff}
+.admin-nav-item.active{background:var(--orange);color:#fff}
+.admin-nav-item .ani{font-size:.95rem}
+.admin-content{padding:2rem}
+.admin-topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:2rem}
+.admin-topbar h1{font-size:1.25rem;font-weight:800;color:var(--navy)}
+.admin-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-bottom:2rem}
+.stat-card{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:1.25rem}
+.stat-label{font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--slate-l);margin-bottom:.25rem}
+.stat-value{font-size:1.8rem;font-weight:800;color:var(--navy);line-height:1}
+.stat-delta{font-size:.75rem;margin-top:.25rem}
+.stat-delta.up{color:var(--green)}.stat-delta.down{color:var(--red)}
+.admin-table{background:#fff;border:1px solid var(--border);border-radius:var(--r);overflow:hidden}
+.table-header{display:flex;align-items:center;justify-content:space-between;padding:1rem 1.25rem;border-bottom:1px solid var(--border)}
+.table-title{font-size:.92rem;font-weight:700;color:var(--navy)}
+table{width:100%;border-collapse:collapse}
+th{padding:.75rem 1.25rem;text-align:left;font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--slate-l);background:var(--bg);border-bottom:1px solid var(--border)}
+td{padding:.85rem 1.25rem;font-size:.84rem;color:var(--navy);border-bottom:1px solid var(--border)}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:#FAFBFC}
+.status-badge{display:inline-flex;align-items:center;gap:.3rem;font-size:.68rem;font-weight:700;padding:.25rem .6rem;border-radius:20px}
+.status-confirmada{background:var(--green-l);color:var(--green)}
+.status-pendente{background:var(--amber-l);color:var(--amber)}
+.status-cancelada{background:var(--red-l);color:var(--red)}
+.action-btn{padding:.3rem .7rem;font-size:.72rem;font-weight:600;border-radius:4px;border:1px solid var(--border);background:#fff;cursor:pointer;transition:all .15s}
+.action-btn:hover{border-color:var(--blue);color:var(--blue)}
+
+/* ── FOOTER ──────────────────────────────────── */
+footer{background:#0F0F0F;padding:3rem var(--g) 1.5rem}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;margin-bottom:2.5rem;padding-bottom:2rem;border-bottom:1px solid rgba(255,255,255,.07)}
+.footer-brand .nav-logo{display:inline-flex;margin-bottom:.85rem}
+.footer-tagline{font-size:.8rem;color:rgba(255,255,255,.35);line-height:1.65;max-width:240px}
+.footer-col-title{font-size:.68rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:.85rem}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:.5rem}
+.footer-links a{font-size:.8rem;color:rgba(255,255,255,.45);transition:color .2s}
+.footer-links a:hover{color:rgba(255,255,255,.8)}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;font-size:.75rem;color:rgba(255,255,255,.2)}
+
+/* ── DOCS SECTION (sitemap, db, wireframe) ───── */
+#docs-section{background:#fff;border-top:3px solid var(--blue);padding:3rem var(--g)}
+.docs-tabs{display:flex;gap:.5rem;margin-bottom:2rem;border-bottom:1px solid var(--border);padding-bottom:0}
+.doc-tab{padding:.6rem 1.1rem;font-size:.82rem;font-weight:600;border-radius:var(--r-sm) var(--r-sm) 0 0;cursor:pointer;border:1px solid transparent;border-bottom:none;transition:all .15s;margin-bottom:-1px}
+.doc-tab.active{background:#fff;border-color:var(--border);color:var(--blue)}
+.doc-tab:not(.active){color:var(--slate);background:transparent}
+.doc-tab:not(.active):hover{color:var(--navy)}
+.doc-content{display:none}
+.doc-content.active{display:block}
+.doc-code{background:var(--navy);color:#a5f3fc;padding:1.5rem;border-radius:var(--r);font-family:monospace;font-size:.78rem;line-height:1.7;overflow-x:auto;white-space:pre;margin-top:1rem}
+.doc-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:1rem}
+.doc-card{border:1px solid var(--border);border-radius:var(--r);padding:1.25rem}
+.doc-card h4{font-size:.9rem;font-weight:700;color:var(--navy);margin-bottom:.75rem}
+.doc-card ul{padding-left:1.2rem;font-size:.8rem;color:var(--slate);line-height:1.8}
+
+/* ── WHATSAPP FLOAT ──────────────────────────── */
+#wa-float{position:fixed;bottom:1.5rem;right:1.5rem;z-index:400;width:54px;height:54px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;box-shadow:0 4px 16px rgba(37,211,102,.4);cursor:pointer;transition:transform .2s}
+#wa-float:hover{transform:scale(1.1)}
+
+/* ── RESPONSIVE ──────────────────────────────── */
+@media(max-width:900px){
+  .cats-grid{grid-template-columns:repeat(2,1fr)}
+  .how-grid{grid-template-columns:1fr 1fr}
+  .faq-grid{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .admin-layout{grid-template-columns:1fr}
+  .admin-sidebar{display:none}
+  .admin-stats{grid-template-columns:1fr 1fr}
+  .sp-grid{grid-template-columns:1fr}
+  .doc-grid{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .cats-grid{grid-template-columns:1fr}
+  .hero-stats{gap:1.5rem}
+  .time-grid{grid-template-columns:repeat(3,1fr)}
+  .type-cards{grid-template-columns:1fr}
+  .how-grid{grid-template-columns:1fr}
+  .admin-stats{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .nav-links,.nav-wa{display:none}
+  .nav-burger{display:block}
+  .form-2col{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* page views */
+.page{display:none}
+.page.active{display:block}
+#home-page.active,.page.active{display:block}
+</style>
+</head>
+<body>
+
+<!-- ════ WHATSAPP FLOAT ══════════════════════════ -->
+<div id="wa-float" onclick="openWhatsApp()" title="Falar no WhatsApp">💬</div>
+
+<!-- ════ NAVIGATION ═════════════════════════════ -->
+<nav id="nav">
+  <div class="wrap nav-inner">
+    <a href="file:///C:/Users/MarisaSantos/Downloads/balcao-cidadao_7.html#" class="nav-logo" onclick="showPage(&#39;home&#39;)" style="gap:.75rem">
+      <img src="./Balcão das Empresas e do Cidadão — Tratamos da burocracia por si_files/fav-ico.png" alt="Um Vez Dois" style="width:32px;height:32px;border-radius:6px;object-fit:contain" onerror="this.style.display=&#39;none&#39;;document.getElementById(&#39;nav-logo-fallback&#39;).style.display=&#39;flex&#39;">
+      <div id="nav-logo-fallback" style="display:none;width:32px;height:32px;background:var(--blue);border-radius:8px;align-items:center;justify-content:center;color:#fff;font-size:.9rem">1×2</div>
+      <div>
+        <div style="line-height:1.1">Balcão das Empresas</div>
+        <div style="font-size:.6rem;font-weight:400;color:var(--slate-l);letter-spacing:.06em">e do Cidadão · Um Vez Dois</div>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="file:///C:/Users/MarisaSantos/Downloads/balcao-cidadao_7.html#categorias" onclick="showPage(&#39;home&#39;)">Serviços</a></li>
+      <li><a href="file:///C:/Users/MarisaSantos/Downloads/balcao-cidadao_7.html#como-funciona">Como Funciona</a></li>
+      <li><a href="file:///C:/Users/MarisaSantos/Downloads/balcao-cidadao_7.html#faq">FAQ</a></li>
+      <li><a href="file:///C:/Users/MarisaSantos/Downloads/balcao-cidadao_7.html#contacto-section">Contacto</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="file:///C:/Users/MarisaSantos/Downloads/balcao-cidadao_7.html#" class="nav-wa" onclick="openWhatsApp();return false">
+        <span>💬</span> WhatsApp
+      </a>
+      <button class="btn btn-primary" onclick="openBooking()">📅 Marcar Atendimento</button>
+    </div>
+    <button class="nav-burger" onclick="toggleMobileMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ════════════════════════════════════════════
+     HOME PAGE
+════════════════════════════════════════════ -->
+<div id="home-page" class="page active">
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg-pattern"></div>
+  <div class="wrap hero-inner">
+    <div class="hero-chips">
+      <span class="chip">🇵🇹 Serviço Nacional</span>
+      <span class="chip">✅ Presencial &amp; Videochamada</span>
+      <span class="chip">⚡ Um Vez Dois</span>
+    </div>
+    <h1 class="hero-h1">Tratamos da burocracia <em>por si</em></h1>
+    <p class="hero-sub">Mais de 200 serviços para cidadãos e empresas num único local. Simples, rápido e sem filas.</p>
+    <div class="hero-ctas">
+      <button class="btn btn-white btn-lg" onclick="openBooking()">📅 Marcar Atendimento</button>
+      <button class="btn btn-outline btn-lg" style="border-color:rgba(255,255,255,.3);color:#fff;" onclick="document.getElementById(&#39;categorias&#39;).scrollIntoView({behavior:&#39;smooth&#39;})">Ver Serviços →</button>
+    </div>
+    <div class="hero-stats">
+      <div class="h-stat"><strong>200+</strong><span>Serviços disponíveis</span></div>
+      <div class="h-stat"><strong>15 min</strong><span>Atendimento médio</span></div>
+      <div class="h-stat"><strong>98%</strong><span>Satisfação dos clientes</span></div>
+      <div class="h-stat"><strong>24h</strong><span>Prazo de resposta</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SEARCH -->
+<div id="search-section">
+  <div class="wrap" style="position:relative">
+    <div class="search-bar">
+      <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg>
+      <input type="text" id="search-input" placeholder="Pesquise um serviço… ex: NIF, Certidão Energética, Registo de Empresa" oninput="handleSearch(this.value)" onblur="setTimeout(()=&gt;hideSearchResults(),200)">
+    </div>
+    <div id="search-results" class="hidden"></div>
+  </div>
+</div>
+
+<!-- CATEGORIES -->
+<section id="categorias">
+  <div class="wrap">
+    <div class="section-label">O que procura?</div>
+    <h2 class="section-title">Encontre o seu serviço</h2>
+    <p class="section-sub">Mais de <strong>200 serviços</strong> para cidadãos e empresas num só local — selecione uma categoria ou pesquise diretamente.</p>
+    <div class="cats-grid" id="cats-grid">
+    <div class="cat-card" style="--cat-color:#1A56DB;--cat-bg:#EBF0FD" onclick="openCategoryBooking(&#39;empresas&#39;)">
+      <div class="cat-icon">🏢</div>
+      <div class="cat-name">Empresas</div>
+      <div class="cat-count">7 serviços disponíveis</div>
+      <div class="cat-services-preview">
+        <span class="cat-tag">Constituição de Empresas</span><span class="cat-tag">Abertura de Atividade</span><span class="cat-tag">RCBE</span>
+        <span class="cat-tag">+4</span>
+      </div>
+    </div>
+  
+    <div class="cat-card" style="--cat-color:#7C3AED;--cat-bg:#F5F3FF" onclick="openCategoryBooking(&#39;estrangeiros&#39;)">
+      <div class="cat-icon">🌍</div>
+      <div class="cat-name">Estrangeiros</div>
+      <div class="cat-count">7 serviços disponíveis</div>
+      <div class="cat-services-preview">
+        <span class="cat-tag">NIF</span><span class="cat-tag">NISS</span><span class="cat-tag">Número de Utente</span>
+        <span class="cat-tag">+4</span>
+      </div>
+    </div>
+  
+    <div class="cat-card" style="--cat-color:#DC2626;--cat-bg:#FEF2F2" onclick="openCategoryBooking(&#39;automovel&#39;)">
+      <div class="cat-icon">🚗</div>
+      <div class="cat-name">Automóvel</div>
+      <div class="cat-count">5 serviços disponíveis</div>
+      <div class="cat-services-preview">
+        <span class="cat-tag">Compra e Venda</span><span class="cat-tag">Alteração de Propriedade</span><span class="cat-tag">Registo Automóvel</span>
+        <span class="cat-tag">+2</span>
+      </div>
+    </div>
+  
+    <div class="cat-card" style="--cat-color:#059669;--cat-bg:#ECFDF5" onclick="openCategoryBooking(&#39;imobiliario&#39;)">
+      <div class="cat-icon">🏠</div>
+      <div class="cat-name">Imobiliário</div>
+      <div class="cat-count">4 serviços disponíveis</div>
+      <div class="cat-services-preview">
+        <span class="cat-tag">Certificados Energéticos</span><span class="cat-tag">Registo Predial</span><span class="cat-tag">Compra e Venda</span>
+        <span class="cat-tag">+1</span>
+      </div>
+    </div>
+  
+    <div class="cat-card" style="--cat-color:#D97706;--cat-bg:#FFFBEB" onclick="openCategoryBooking(&#39;seguros&#39;)">
+      <div class="cat-icon">🛡️</div>
+      <div class="cat-name">Seguros</div>
+      <div class="cat-count">5 serviços disponíveis</div>
+      <div class="cat-services-preview">
+        <span class="cat-tag">Automóvel</span><span class="cat-tag">Saúde</span><span class="cat-tag">Habitação</span>
+        <span class="cat-tag">+2</span>
+      </div>
+    </div>
+  
+    <div class="cat-card" style="--cat-color:#0891B2;--cat-bg:#ECFEFF" onclick="openCategoryBooking(&#39;energia&#39;)">
+      <div class="cat-icon">⚡</div>
+      <div class="cat-name">Energia &amp; Comunicações</div>
+      <div class="cat-count">5 serviços disponíveis</div>
+      <div class="cat-services-preview">
+        <span class="cat-tag">Eletricidade</span><span class="cat-tag">Gás</span><span class="cat-tag">Internet</span>
+        <span class="cat-tag">+2</span>
+      </div>
+    </div>
+  
+    <div class="cat-card" style="--cat-color:#7C3AED;--cat-bg:#F5F3FF" onclick="openCategoryBooking(&#39;financeiro&#39;)">
+      <div class="cat-icon">💳</div>
+      <div class="cat-name">Financeiro</div>
+      <div class="cat-count">2 serviços disponíveis</div>
+      <div class="cat-services-preview">
+        <span class="cat-tag">Crédito Habitação</span><span class="cat-tag">Outros Créditos</span>
+        
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="como-funciona">
+  <div class="wrap">
+    <div class="section-label" style="color:#FF6B1A">Como funciona?</div>
+    <h2 class="section-title" style="color:#fff">Marque em menos de 2 minutos</h2>
+    <div class="how-grid">
+      <div class="how-step">
+        <div class="how-num">1</div>
+        <div class="how-icon">📂</div>
+        <div class="how-title">Escolha a categoria</div>
+        <div class="how-desc">Selecione entre Empresas, Estrangeiros, Automóvel, Imobiliário e mais.</div>
+        <div class="how-arrow">→</div>
+      </div>
+      <div class="how-step">
+        <div class="how-num">2</div>
+        <div class="how-icon">⚙️</div>
+        <div class="how-title">Selecione o serviço</div>
+        <div class="how-desc">Escolha o serviço específico de que precisa. Veja o que traz e o prazo estimado.</div>
+        <div class="how-arrow">→</div>
+      </div>
+      <div class="how-step">
+        <div class="how-num">3</div>
+        <div class="how-icon">📅</div>
+        <div class="how-title">Escolha data e hora</div>
+        <div class="how-desc">Veja os horários disponíveis e escolha o que é mais conveniente para si.</div>
+        <div class="how-arrow">→</div>
+      </div>
+      <div class="how-step">
+        <div class="how-num">4</div>
+        <div class="how-icon">✅</div>
+        <div class="how-title">Confirmação imediata</div>
+        <div class="how-desc">Recebe confirmação por email e SMS com todos os detalhes do seu atendimento.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="section-label">Dúvidas frequentes</div>
+    <h2 class="section-title">Perguntas frequentes</h2>
+    <div class="faq-grid" id="faq-grid">
+    <div class="faq-item" id="faq-0">
+      <div class="faq-q" onclick="toggleFAQ(0)">
+        <span style="flex:1">Qual o prazo para obter o NIF para estrangeiro?</span>
+        <span class="faq-icon">+</span>
+      </div>
+      <div class="faq-a">O NIF para estrangeiros é geralmente obtido no mesmo dia do atendimento presencial. Com procuração, podemos tratar em nome do cliente sem a sua presença física.</div>
+    </div>
+  
+    <div class="faq-item" id="faq-1">
+      <div class="faq-q" onclick="toggleFAQ(1)">
+        <span style="flex:1">Quais documentos preciso para constituir uma empresa?</span>
+        <span class="faq-icon">+</span>
+      </div>
+      <div class="faq-a">BI/CC do(s) sócio(s), NIF, comprovativo de morada, e o pacto social. Tratamos de todo o processo de A a Z.</div>
+    </div>
+  
+    <div class="faq-item" id="faq-2">
+      <div class="faq-q" onclick="toggleFAQ(2)">
+        <span style="flex:1">É possível fazer atendimento por videochamada?</span>
+        <span class="faq-icon">+</span>
+      </div>
+      <div class="faq-a">Sim! Oferecemos atendimento por videochamada para a maioria dos serviços. Pode marcar através do nosso sistema de marcações online.</div>
+    </div>
+  
+    <div class="faq-item" id="faq-3">
+      <div class="faq-q" onclick="toggleFAQ(3)">
+        <span style="flex:1">Quanto tempo demora uma marcação de automóvel?</span>
+        <span class="faq-icon">+</span>
+      </div>
+      <div class="faq-a">A alteração de propriedade demora tipicamente 15-30 minutos de atendimento. O registo pode levar 2-5 dias úteis para processar.</div>
+    </div>
+  
+    <div class="faq-item" id="faq-4">
+      <div class="faq-q" onclick="toggleFAQ(4)">
+        <span style="flex:1">Posso cancelar ou reagendar a minha marcação?</span>
+        <span class="faq-icon">+</span>
+      </div>
+      <div class="faq-a">Sim, pode cancelar ou reagendar até 2 horas antes do atendimento através do link enviado no email de confirmação, sem qualquer custo.</div>
+    </div>
+  
+    <div class="faq-item" id="faq-5">
+      <div class="faq-q" onclick="toggleFAQ(5)">
+        <span style="flex:1">Trabalham com empresas de todas as dimensões?</span>
+        <span class="faq-icon">+</span>
+      </div>
+      <div class="faq-a">Sim, trabalhamos com freelancers, microempresas, PMEs e grandes empresas. Adaptamos os nossos serviços à realidade de cada cliente.</div>
+    </div>
+  
+    <div class="faq-item" id="faq-6">
+      <div class="faq-q" onclick="toggleFAQ(6)">
+        <span style="flex:1">O atendimento tem algum custo?</span>
+        <span class="faq-icon">+</span>
+      </div>
+      <div class="faq-a">A primeira reunião de diagnóstico é sempre gratuita. Os serviços têm preços fixos transparentes disponíveis na página de cada serviço.</div>
+    </div>
+  
+    <div class="faq-item" id="faq-7">
+      <div class="faq-q" onclick="toggleFAQ(7)">
+        <span style="flex:1">Como recebo a confirmação da marcação?</span>
+        <span class="faq-icon">+</span>
+      </div>
+      <div class="faq-a">Enviamos imediatamente um email de confirmação com todos os detalhes, incluindo referência única, data, hora e documentos a trazer.</div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contacto-section">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div>
+        <div class="section-label">Fale connosco</div>
+        <h2 class="section-title">Precisa de ajuda?</h2>
+        <p class="section-sub" style="margin-bottom:0">A nossa equipa está disponível para o ajudar por telefone, email ou WhatsApp.</p>
+        <div class="contact-methods">
+          <div class="contact-method" style="cursor:pointer" onclick="openWhatsApp()">
+            <div class="cm-icon" style="background:#25D36615;font-size:1.3rem">💬</div>
+            <div><div class="cm-label">WhatsApp</div><div class="cm-value">964 712 854</div></div>
+          </div>
+          <div class="contact-method">
+            <div class="cm-icon" style="background:var(--blue-l)">📞</div>
+            <div><div class="cm-label">Telemóvel / Fixo</div><div class="cm-value">964 712 854 &nbsp;|&nbsp; 244 832 015</div></div>
+          </div>
+          <div class="contact-method">
+            <div class="cm-icon" style="background:#FEF3C7">📧</div>
+            <div><div class="cm-label">Email</div><div class="cm-value">geral@umvezdois.pt</div></div>
+          </div>
+          <div class="contact-method" style="cursor:pointer" onclick="window.open(&#39;https://www.google.com/maps/place//data=!4m2!3m1!1s0x9e9909c09b516f5:0x2c9614f17aef8db5&#39;,&#39;_blank&#39;)">
+            <div class="cm-icon" style="background:#F3E8FF">📍</div>
+            <div>
+              <div class="cm-label">Leiria</div>
+              <div class="cm-value" style="font-size:.82rem">Av. Dom João III, Ed. 2002, Ent. A, 3º Andar, Fr. BC<br><span style="font-weight:400;color:var(--slate)">2400-164 Leiria</span></div>
+            </div>
+          </div>
+          <div class="contact-method">
+            <div class="cm-icon" style="background:#F3E8FF">📍</div>
+            <div>
+              <div class="cm-label">Pombal</div>
+              <div class="cm-value" style="font-size:.82rem">Rua Dr. Luís Torres, Nº1, 1.ºE<br><span style="font-weight:400;color:var(--slate)">3100-464 Pombal</span></div>
+            </div>
+          </div>
+          <div class="contact-method">
+            <div class="cm-icon" style="background:#ECFDF5">🌐</div>
+            <div><div class="cm-label">Website</div><div class="cm-value"><a href="https://www.umvezdois.pt/" target="_blank" style="color:var(--blue)">www.umvezdois.pt</a></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-card">
+        <h3>Enviar mensagem</h3>
+        <p>Resposta em menos de 2 horas úteis.</p>
+        <div class="form-row"><label>Nome completo</label><input type="text" placeholder="O seu nome"></div>
+        <div class="form-row"><label>Email</label><input type="email" placeholder="email@exemplo.pt"></div>
+        <div class="form-row"><label>Assunto</label>
+          <select><option>Dúvida sobre um serviço</option><option>Marcação existente</option><option>Reclamação</option><option>Outro</option></select>
+        </div>
+        <div class="form-row"><label>Mensagem</label><textarea rows="3" placeholder="Descreva a sua questão..."></textarea></div>
+        <button class="btn btn-primary" style="width:100%" onclick="submitContact()">Enviar mensagem →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="mapa-section">
+  <div class="map-placeholder" style="background:linear-gradient(135deg,#e0e7ff,#ede9fe);gap:0;padding:1.5rem;display:flex;flex-direction:column;align-items:center;justify-content:center">
+    <div class="map-pin">📍</div>
+    <div style="display:flex;gap:3rem;flex-wrap:wrap;justify-content:center;margin-top:.5rem">
+      <div style="text-align:center">
+        <div class="map-address" style="font-size:.9rem;font-weight:700">Leiria</div>
+        <div style="font-size:.78rem;color:var(--slate);margin:.2rem 0">Av. Dom João III, Ed. 2002, Ent. A, 3º Andar, Fr. BC<br>2400-164 Leiria</div>
+        <div class="map-link" onclick="window.open(&#39;https://www.google.com/maps/place//data=!4m2!3m1!1s0x9e9909c09b516f5:0x2c9614f17aef8db5&#39;,&#39;_blank&#39;)">Abrir no Google Maps →</div>
+      </div>
+      <div style="text-align:center">
+        <div class="map-address" style="font-size:.9rem;font-weight:700">Pombal</div>
+        <div style="font-size:.78rem;color:var(--slate);margin:.2rem 0">Rua Dr. Luís Torres, Nº1, 1.ºE<br>3100-464 Pombal</div>
+        <div class="map-link" onclick="window.open(&#39;https://www.google.com/maps/search/Rua+Dr+Lu%C3%ADs+Torres+1+Pombal&#39;,&#39;_blank&#39;)">Abrir no Google Maps →</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DOCS SECTION -->
+<section id="docs-section">
+  <div class="wrap">
+    <div class="section-label">Documentação Técnica</div>
+    <h2 class="section-title">Arquitetura &amp; Planeamento</h2>
+    <div class="docs-tabs">
+      <div class="doc-tab active" onclick="switchDocTab(this,&#39;sitemap&#39;)">Sitemap</div>
+      <div class="doc-tab" onclick="switchDocTab(this,&#39;wireframe&#39;)">Wireframes</div>
+      <div class="doc-tab" onclick="switchDocTab(this,&#39;database&#39;)">Base de Dados</div>
+      <div class="doc-tab" onclick="switchDocTab(this,&#39;bookingsys&#39;)">Sistema de Marcações</div>
+      <div class="doc-tab" onclick="switchDocTab(this,&#39;nextjs&#39;)">Next.js Structure</div>
+    </div>
+
+    <div id="doc-sitemap" class="doc-content active">
+      <div class="doc-grid">
+        <div class="doc-card"><h4>🗺 Sitemap Completo</h4>
+          <ul>
+            <li>/ — Homepage</li>
+            <li>/servicos — Todos os serviços</li>
+            <li>/servicos/[categoria] — Por categoria</li>
+            <li>/servicos/[categoria]/[servico] — Página de serviço</li>
+            <li>/marcacao — Fluxo de marcação</li>
+            <li>/marcacao/confirmacao/[ref] — Confirmação</li>
+            <li>/sobre-nos — Quem somos</li>
+            <li>/faq — Perguntas frequentes</li>
+            <li>/contacto — Contacto + mapa</li>
+            <li>/admin — Painel de administração</li>
+            <li>/admin/marcacoes — Gerir marcações</li>
+            <li>/admin/servicos — Gerir serviços</li>
+            <li>/admin/horarios — Gerir horários</li>
+            <li>/admin/clientes — Gerir clientes</li>
+            <li>/admin/relatorios — Relatórios</li>
+          </ul>
+        </div>
+        <div class="doc-card"><h4>📂 Categorias &amp; Serviços</h4>
+          <ul>
+            <li>Empresas (7 serviços)</li>
+            <li>Estrangeiros (7 serviços)</li>
+            <li>Automóvel (5 serviços)</li>
+            <li>Imobiliário (4 serviços)</li>
+            <li>Seguros (5 serviços)</li>
+            <li>Energia &amp; Telecomunicações (6 serviços)</li>
+            <li>Total: 34 serviços base</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="doc-wireframe" class="doc-content">
+      <pre class="doc-code">HOMEPAGE
+┌────────────────────────────────────────────────────────────────┐
+│ NAV: Logo | Serviços | Como Funciona | FAQ | Contacto  [Admin] │
+│                                            [WhatsApp] [Marcar] │
+├────────────────────────────────────────────────────────────────┤
+│ HERO (navy-blue gradient)                                      │
+│   Chips: 🇵🇹 Portugal | ✅ Presencial &amp; Online | ⚡ 24h       │
+│   H1: "Tratamos da burocracia por si"                         │
+│   Sub: "Mais de 200 serviços..."                              │
+│   [Marcar Atendimento]  [Ver Serviços →]                      │
+│   Stats: 200+ serviços | 15 min | 98% satisfação | 24h       │
+├────────────────────────────────────────────────────────────────┤
+│ SEARCH BAR (sticky)  🔍 [Pesquise um serviço...]              │
+├────────────────────────────────────────────────────────────────┤
+│ CATEGORIES GRID (3 col)                                        │
+│ [🏢 Empresas] [🌍 Estrangeiros] [🚗 Automóvel]              │
+│ [🏠 Imobiliário] [🛡 Seguros]  [⚡ Energia &amp; Telecom]        │
+├────────────────────────────────────────────────────────────────┤
+│ HOW IT WORKS (dark navy)                                       │
+│ 1.Categoria → 2.Serviço → 3.Data/Hora → 4.Confirmação        │
+├────────────────────────────────────────────────────────────────┤
+│ FAQ  — 2 col accordion grid                                    │
+├────────────────────────────────────────────────────────────────┤
+│ CONTACT — Left: methods | Right: form                          │
+├────────────────────────────────────────────────────────────────┤
+│ MAP PLACEHOLDER (280px height)                                 │
+├────────────────────────────────────────────────────────────────┤
+│ DOCS SECTION (technical, tabbed)                               │
+├────────────────────────────────────────────────────────────────┤
+│ FOOTER 4 col                                                   │
+└────────────────────────────────────────────────────────────────┘
+
+BOOKING MODAL (6 steps)
+┌────────────────────────────────┐
+│ [X]  Marcar Atendimento        │
+│ ● ─ ● ─ ● ─ ● ─ ● ─ ●        │
+│  1   2   3   4   5   6        │
+├────────────────────────────────┤
+│ STEP 1: Tipo de atendimento    │
+│  [📍Presencial][💻Videocall]   │
+│  [📞 Pedido de contacto]       │
+├────────────────────────────────┤
+│ STEP 2: Categoria → Serviço    │
+│  [scroll list of services]     │
+├────────────────────────────────┤
+│ STEP 3: Calendário             │
+│  ← Jun 2025 →                 │
+│  S  T  Q  Q  S  S  D          │
+│  calendario visual             │
+├────────────────────────────────┤
+│ STEP 4: Horários               │
+│  [09:00][09:30][10:00]...      │
+├────────────────────────────────┤
+│ STEP 5: Dados pessoais         │
+│  Nome | Telefone | Email       │
+│  NIF (opcional)                │
+├────────────────────────────────┤
+│ STEP 6: Confirmação ✅         │
+│  Resumo + Ref: BCE-2025-XXXX   │
+└────────────────────────────────┘
+
+ADMIN PANEL
+┌──────────┬────────────────────────────────────────┐
+│ Sidebar  │  Dashboard                             │
+│ Dashboard│  Stats: Hoje | Semana | Mês | Ano      │
+│ Marcações│                                        │
+│ Serviços │  [Tabela de marcações recentes]        │
+│ Horários │                                        │
+│ Clientes │                                        │
+│ Relatór. │                                        │
+└──────────┴────────────────────────────────────────┘</pre>
+    </div>
+
+    <div id="doc-database" class="doc-content">
+      <pre class="doc-code">-- POSTGRESQL SCHEMA
+
+-- Categorias
+CREATE TABLE categories (
+  id          UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  slug        VARCHAR(80) UNIQUE NOT NULL,
+  name        VARCHAR(120) NOT NULL,
+  icon        VARCHAR(20),
+  color       VARCHAR(20),
+  sort_order  INT DEFAULT 0,
+  active      BOOLEAN DEFAULT true,
+  created_at  TIMESTAMPTZ DEFAULT now()
+);
+
+-- Serviços
+CREATE TABLE services (
+  id            UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  category_id   UUID REFERENCES categories(id),
+  slug          VARCHAR(120) UNIQUE NOT NULL,
+  name          VARCHAR(200) NOT NULL,
+  description   TEXT,
+  duration_min  INT DEFAULT 30,
+  price_min     DECIMAL(8,2),
+  price_max     DECIMAL(8,2),
+  docs_required JSONB,          -- ["BI", "NIF", ...]
+  modalities    TEXT[],         -- {presencial, videocall, contacto}
+  active        BOOLEAN DEFAULT true,
+  created_at    TIMESTAMPTZ DEFAULT now()
+);
+
+-- Slots de disponibilidade (templates semanais)
+CREATE TABLE availability_templates (
+  id          UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  day_of_week SMALLINT NOT NULL,   -- 1=Mon ... 7=Sun
+  start_time  TIME NOT NULL,
+  end_time    TIME NOT NULL,
+  capacity    SMALLINT DEFAULT 1,
+  active      BOOLEAN DEFAULT true
+);
+
+-- Marcações
+CREATE TABLE bookings (
+  id            UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  reference     VARCHAR(20) UNIQUE NOT NULL,  -- BCE-2025-XXXX
+  service_id    UUID REFERENCES services(id),
+  modality      VARCHAR(20) NOT NULL,          -- presencial|videocall|contacto
+  booking_date  DATE NOT NULL,
+  booking_time  TIME NOT NULL,
+  status        VARCHAR(20) DEFAULT 'pendente', -- pendente|confirmada|cancelada|concluida
+  -- Cliente
+  client_name   VARCHAR(200) NOT NULL,
+  client_email  VARCHAR(200) NOT NULL,
+  client_phone  VARCHAR(30),
+  client_nif    VARCHAR(15),
+  notes         TEXT,
+  -- Metadata
+  ip_address    INET,
+  created_at    TIMESTAMPTZ DEFAULT now(),
+  updated_at    TIMESTAMPTZ DEFAULT now(),
+  confirmed_at  TIMESTAMPTZ,
+  cancelled_at  TIMESTAMPTZ,
+  cancel_reason TEXT
+);
+
+-- Índices
+CREATE INDEX idx_bookings_date ON bookings(booking_date, booking_time);
+CREATE INDEX idx_bookings_status ON bookings(status);
+CREATE INDEX idx_bookings_email ON bookings(client_email);
+CREATE INDEX idx_bookings_ref ON bookings(reference);
+CREATE INDEX idx_services_category ON services(category_id);
+
+-- FAQ
+CREATE TABLE faqs (
+  id         UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  question   TEXT NOT NULL,
+  answer     TEXT NOT NULL,
+  category   VARCHAR(80),
+  sort_order INT DEFAULT 0,
+  active     BOOLEAN DEFAULT true
+);
+
+-- Notificações / Emails
+CREATE TABLE notifications (
+  id          UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  booking_id  UUID REFERENCES bookings(id),
+  type        VARCHAR(40),    -- confirmation|reminder|cancellation
+  channel     VARCHAR(20),    -- email|sms|whatsapp
+  sent_at     TIMESTAMPTZ,
+  status      VARCHAR(20) DEFAULT 'pending'
+);</pre>
+    </div>
+
+    <div id="doc-bookingsys" class="doc-content">
+      <div class="doc-grid">
+        <div class="doc-card"><h4>⚙️ Fluxo do Sistema de Marcações</h4>
+          <ul>
+            <li>1. Utilizador abre modal de marcação</li>
+            <li>2. Seleciona tipo (presencial / videocall / contacto)</li>
+            <li>3. Filtra e seleciona categoria + serviço</li>
+            <li>4. API: GET /api/availability?service=X&amp;month=YYYY-MM</li>
+            <li>5. Calendário mostra dias disponíveis</li>
+            <li>6. API: GET /api/slots?service=X&amp;date=YYYY-MM-DD</li>
+            <li>7. Mostra slots livres (exclui já marcados)</li>
+            <li>8. Utilizador preenche dados pessoais</li>
+            <li>9. POST /api/bookings — cria registo + gera referência</li>
+            <li>10. Email de confirmação automático (Resend/SendGrid)</li>
+            <li>11. SMS opcional (Twilio)</li>
+            <li>12. WhatsApp opcional (API oficial)</li>
+            <li>13. Lembrete automático 24h antes</li>
+          </ul>
+        </div>
+        <div class="doc-card"><h4>🔔 Regras de Negócio</h4>
+          <ul>
+            <li>Marcações até 90 dias no futuro</li>
+            <li>Cancelamento até 2h antes grátis</li>
+            <li>Lembrete 24h antes por email/SMS</li>
+            <li>Referência: BCE-YYYY-NNNN</li>
+            <li>Máximo 2 marcações ativas por email</li>
+            <li>Confirmação dupla para videochamadas</li>
+            <li>Tempo de buffer 10 min entre slots</li>
+            <li>Horário: Seg-Sex 09:00–18:00</li>
+            <li>Bloqueio automático de feriados</li>
+            <li>Admin pode forçar slots extra</li>
+          </ul>
+        </div>
+        <div class="doc-card"><h4>📡 API Endpoints (Next.js)</h4>
+          <ul>
+            <li>GET /api/categories</li>
+            <li>GET /api/services?category=X</li>
+            <li>GET /api/availability?service=X&amp;month=M</li>
+            <li>GET /api/slots?service=X&amp;date=D</li>
+            <li>POST /api/bookings</li>
+            <li>GET /api/bookings/[ref]</li>
+            <li>PATCH /api/bookings/[ref]/cancel</li>
+            <li>GET /api/admin/bookings</li>
+            <li>PATCH /api/admin/bookings/[id]</li>
+            <li>GET /api/admin/stats</li>
+          </ul>
+        </div>
+        <div class="doc-card"><h4>🔒 Segurança &amp; Compliance</h4>
+          <ul>
+            <li>Rate limiting: 10 req/min por IP</li>
+            <li>CAPTCHA em formulários públicos</li>
+            <li>Dados encriptados em repouso (AES-256)</li>
+            <li>RGPD: consentimento explícito</li>
+            <li>Retenção de dados: 2 anos</li>
+            <li>Admin auth: NextAuth.js + 2FA</li>
+            <li>Logs de auditoria completos</li>
+            <li>Backup automático diário</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="doc-nextjs" class="doc-content">
+      <pre class="doc-code">PROJECT STRUCTURE — Next.js 14 + TypeScript + Tailwind
+
+balcao-cidadao/
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx                     ← Homepage
+│   ├── servicos/
+│   │   ├── page.tsx                 ← All services
+│   │   ├── [categoria]/
+│   │   │   ├── page.tsx             ← Category page
+│   │   │   └── [servico]/
+│   │   │       └── page.tsx         ← Service detail
+│   ├── marcacao/
+│   │   ├── page.tsx                 ← Booking flow
+│   │   └── confirmacao/
+│   │       └── [ref]/page.tsx       ← Confirmation
+│   ├── faq/page.tsx
+│   ├── contacto/page.tsx
+│   ├── sobre-nos/page.tsx
+│   └── admin/
+│       ├── layout.tsx               ← Admin layout (auth guard)
+│       ├── page.tsx                 ← Dashboard
+│       ├── marcacoes/page.tsx
+│       ├── servicos/page.tsx
+│       ├── horarios/page.tsx
+│       ├── clientes/page.tsx
+│       └── relatorios/page.tsx
+│
+├── api/
+│   ├── categories/route.ts
+│   ├── services/route.ts
+│   ├── availability/route.ts
+│   ├── slots/route.ts
+│   ├── bookings/
+│   │   ├── route.ts
+│   │   └── [ref]/
+│   │       ├── route.ts
+│   │       └── cancel/route.ts
+│   └── admin/
+│       ├── bookings/route.ts
+│       └── stats/route.ts
+│
+├── components/
+│   ├── layout/Navbar.tsx
+│   ├── layout/Footer.tsx
+│   ├── booking/BookingModal.tsx
+│   ├── booking/StepIndicator.tsx
+│   ├── booking/CalendarPicker.tsx
+│   ├── booking/TimePicker.tsx
+│   ├── services/CategoryCard.tsx
+│   ├── services/ServiceCard.tsx
+│   ├── services/SearchBar.tsx
+│   ├── ui/Button.tsx
+│   ├── ui/Badge.tsx
+│   ├── ui/Modal.tsx
+│   └── admin/
+│       ├── BookingsTable.tsx
+│       ├── StatsCards.tsx
+│       └── Sidebar.tsx
+│
+├── lib/
+│   ├── db.ts                        ← Postgres (pg / Drizzle ORM)
+│   ├── email.ts                     ← Resend / SendGrid
+│   ├── sms.ts                       ← Twilio
+│   ├── whatsapp.ts
+│   └── utils.ts
+│
+├── types/
+│   ├── booking.ts
+│   ├── service.ts
+│   └── admin.ts
+│
+├── prisma/
+│   └── schema.prisma
+│
+├── .env.local
+├── next.config.ts
+├── tailwind.config.ts
+└── package.json
+
+KEY DEPENDENCIES:
+  next: 14.x          react: 18.x
+  typescript          tailwindcss
+  prisma (ORM)        @vercel/postgres
+  next-auth           resend (email)
+  react-hook-form     zod (validation)
+  date-fns            lucide-react</pre>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:.85rem">
+          <img src="./Balcão das Empresas e do Cidadão — Tratamos da burocracia por si_files/fav-ico.png" alt="Um Vez Dois" style="width:32px;height:32px;border-radius:6px;object-fit:contain;background:#fff;padding:2px" onerror="this.outerHTML=&#39;&lt;div style=\&#39;width:32px;height:32px;background:var(--blue);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:.75rem;font-weight:800\&#39;&gt;1×2&lt;/div&gt;&#39;">
+          <div style="font-size:.95rem;font-weight:800;color:#fff;line-height:1.2">Balcão das Empresas<br><span style="font-size:.6rem;font-weight:400;color:rgba(255,255,255,.3);letter-spacing:.06em">e do Cidadão · Um Vez Dois</span></div>
+        </div>
+        <p class="footer-tagline">Tratamos da burocracia por si. Serviços para cidadãos e empresas em Leiria e Pombal.</p>
+        <div style="margin-top:1rem;font-size:.78rem;color:rgba(255,255,255,.35);line-height:1.8">
+          <div>📞 964 712 854 &nbsp;|&nbsp; 244 832 015</div>
+          <div>📧 geral@umvezdois.pt</div>
+          <div>🌐 <a href="https://www.umvezdois.pt/" target="_blank" style="color:rgba(255,255,255,.4);text-decoration:underline">www.umvezdois.pt</a></div>
+        </div>
+      </div>
+      <div>
+        <p class="footer-col-title">Serviços</p>
+        <ul class="footer-links">
+          <li><a href="file:///C:/Users/MarisaSantos/Downloads/balcao-cidadao_7.html#">Empresas</a></li>
+          <li><a href="file:///C:/Users/MarisaSantos/Downloads/balcao-cidadao_7.html#">Estrangeiros</a></li>
+          <li><a href="file:///C:/Users/MarisaSantos/Downloads/balcao-cidadao_7.html#">Automóvel</a></li>
+          <li><a href="file:///C:/Users/MarisaSantos/Downloads/balcao-cidadao_7.html#">Imobiliário</a></li>
+          <li><a href="file:///C:/Users/MarisaSantos/Downloads/balcao-cidadao_7.html#">Seguros</a></li>
+          <li><a href="file:///C:/Users/MarisaSantos/Downloads/balcao-cidadao_7.html#">Energia &amp; Comunicações</a></li>
+          <li><a href="file:///C:/Users/MarisaSantos/Downloads/balcao-cidadao_7.html#">Financeiro</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Atendimento</p>
+        <ul class="footer-links">
+          <li><a href="file:///C:/Users/MarisaSantos/Downloads/balcao-cidadao_7.html#" onclick="openBooking()">Marcar Presencial</a></li>
+          <li><a href="file:///C:/Users/MarisaSantos/Downloads/balcao-cidadao_7.html#" onclick="openBooking()">Marcar Videochamada</a></li>
+          <li><a href="file:///C:/Users/MarisaSantos/Downloads/balcao-cidadao_7.html#">Pedido de Contacto</a></li>
+          <li><a href="file:///C:/Users/MarisaSantos/Downloads/balcao-cidadao_7.html#">Verificar Marcação</a></li>
+          <li><a href="file:///C:/Users/MarisaSantos/Downloads/balcao-cidadao_7.html#">Cancelar Marcação</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Institucional</p>
+        <ul class="footer-links">
+          <li><a href="file:///C:/Users/MarisaSantos/Downloads/balcao-cidadao_7.html#">Sobre Nós</a></li>
+          <li><a href="file:///C:/Users/MarisaSantos/Downloads/balcao-cidadao_7.html#faq">FAQ</a></li>
+          <li><a href="file:///C:/Users/MarisaSantos/Downloads/balcao-cidadao_7.html#contacto-section">Contacto</a></li>
+          <li><a href="file:///C:/Users/MarisaSantos/Downloads/balcao-cidadao_7.html#">Privacidade</a></li>
+          <li><a href="file:///C:/Users/MarisaSantos/Downloads/balcao-cidadao_7.html#">Termos de Uso</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Balcão das Empresas e do Cidadão · Um Vez Dois, Lda. Todos os direitos reservados.</span>
+      <span>Seg–Sex 09:00–18:00 | 964 712 854</span>
+    </div>
+  </div>
+</footer>
+</div><!-- end home-page -->
+
+<!-- ════════════════════════════════════════════
+     SERVICE PAGE
+════════════════════════════════════════════ -->
+<div id="service-page-view" class="page">
+  <div id="service-page">
+    <div class="wrap">
+      <div class="sp-back" onclick="showPage(&#39;home&#39;)">← Voltar aos serviços</div>
+      <div class="sp-grid">
+        <div class="sp-content" id="sp-content"></div>
+        <div>
+          <div class="sp-card" id="sp-sidebar"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════
+     ADMIN PAGE
+════════════════════════════════════════════ -->
+<div id="admin-page-view" class="page">
+  <div id="admin-panel">
+    <div class="admin-layout">
+      <aside class="admin-sidebar">
+        <div class="admin-logo">Balcão BEC<small>Um Vez Dois · Admin</small></div>
+        <div class="admin-nav-item active" onclick="switchAdmin(this,&#39;dashboard&#39;)"><span class="ani">📊</span> Dashboard</div>
+        <div class="admin-nav-item" onclick="switchAdmin(this,&#39;marcacoes&#39;)"><span class="ani">📅</span> Marcações</div>
+        <div class="admin-nav-item" onclick="switchAdmin(this,&#39;servicos&#39;)"><span class="ani">⚙️</span> Serviços</div>
+        <div class="admin-nav-item" onclick="switchAdmin(this,&#39;horarios&#39;)"><span class="ani">🕐</span> Horários</div>
+        <div class="admin-nav-item" onclick="switchAdmin(this,&#39;clientes&#39;)"><span class="ani">👥</span> Clientes</div>
+        <div class="admin-nav-item" onclick="switchAdmin(this,&#39;relatorios&#39;)"><span class="ani">📈</span> Relatórios</div>
+        <div style="margin-top:auto;padding-top:1rem;border-top:1px solid rgba(255,255,255,.07)">
+          <div class="admin-nav-item" onclick="showPage(&#39;home&#39;)"><span class="ani">← </span> Voltar ao Site</div>
+        </div>
+      </aside>
+      <main class="admin-content" id="admin-content"></main>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════
+     BOOKING MODAL
+════════════════════════════════════════════ -->
+<div id="booking-overlay" class="hidden" onclick="closeBookingOnOverlay(event)">
+  <div id="booking-modal">
+    <div class="bm-header">
+      <span class="bm-title" id="bm-title">Marcar Atendimento</span>
+      <button class="bm-close" onclick="closeBooking()">✕</button>
+    </div>
+    <div class="bm-progress">
+      <div class="progress-steps" id="progress-steps"></div>
+    </div>
+    <div class="bm-body" id="bm-body"></div>
+    <div class="bm-footer" id="bm-footer"></div>
+  </div>
+</div>
+
+<script>
+// ════════════════════════════════════════════
+//  DATA
+// ════════════════════════════════════════════
+const CATEGORIES = [
+  { id:'empresas', name:'Empresas', icon:'🏢', color:'#1A56DB', bg:'#EBF0FD',
+    services:['Constituição de Empresas','Abertura de Atividade','RCBE','Contabilidade','Seguros Empresariais','Certificados Energéticos','Consultoria Financeira'] },
+  { id:'estrangeiros', name:'Estrangeiros', icon:'🌍', color:'#7C3AED', bg:'#F5F3FF',
+    services:['NIF','NISS','Número de Utente','Representação Fiscal','Reagrupamento Familiar','Nacionalidade Portuguesa','Autorização de Residência'] },
+  { id:'automovel', name:'Automóvel', icon:'🚗', color:'#DC2626', bg:'#FEF2F2',
+    services:['Compra e Venda','Alteração de Propriedade','Registo Automóvel','Legalização de Viaturas','Homologações'] },
+  { id:'imobiliario', name:'Imobiliário', icon:'🏠', color:'#059669', bg:'#ECFDF5',
+    services:['Certificados Energéticos','Registo Predial','Compra e Venda','Doações'] },
+  { id:'seguros', name:'Seguros', icon:'🛡️', color:'#D97706', bg:'#FFFBEB',
+    services:['Automóvel','Saúde','Habitação','Vida','Acidentes de Trabalho'] },
+  { id:'energia', name:'Energia & Comunicações', icon:'⚡', color:'#0891B2', bg:'#ECFEFF',
+    services:['Eletricidade','Gás','Internet','TV','Telemóvel'] },
+  { id:'financeiro', name:'Financeiro', icon:'💳', color:'#7C3AED', bg:'#F5F3FF',
+    services:['Crédito Habitação','Outros Créditos'] },
+];
+
+const FAQS = [
+  { q:'Qual o prazo para obter o NIF para estrangeiro?', a:'O NIF para estrangeiros é geralmente obtido no mesmo dia do atendimento presencial. Com procuração, podemos tratar em nome do cliente sem a sua presença física.' },
+  { q:'Quais documentos preciso para constituir uma empresa?', a:'BI/CC do(s) sócio(s), NIF, comprovativo de morada, e o pacto social. Tratamos de todo o processo de A a Z.' },
+  { q:'É possível fazer atendimento por videochamada?', a:'Sim! Oferecemos atendimento por videochamada para a maioria dos serviços. Pode marcar através do nosso sistema de marcações online.' },
+  { q:'Quanto tempo demora uma marcação de automóvel?', a:'A alteração de propriedade demora tipicamente 15-30 minutos de atendimento. O registo pode levar 2-5 dias úteis para processar.' },
+  { q:'Posso cancelar ou reagendar a minha marcação?', a:'Sim, pode cancelar ou reagendar até 2 horas antes do atendimento através do link enviado no email de confirmação, sem qualquer custo.' },
+  { q:'Trabalham com empresas de todas as dimensões?', a:'Sim, trabalhamos com freelancers, microempresas, PMEs e grandes empresas. Adaptamos os nossos serviços à realidade de cada cliente.' },
+  { q:'O atendimento tem algum custo?', a:'A primeira reunião de diagnóstico é sempre gratuita. Os serviços têm preços fixos transparentes disponíveis na página de cada serviço.' },
+  { q:'Como recebo a confirmação da marcação?', a:'Enviamos imediatamente um email de confirmação com todos os detalhes, incluindo referência única, data, hora e documentos a trazer.' },
+];
+
+// Booking state
+let booking = { step:1, type:'', catId:'', service:'', date:'', time:'', name:'', email:'', phone:'' };
+const STEPS = ['Tipo','Serviço','Data','Hora','Dados','Confirmação'];
+
+// Calendar state
+let calYear = new Date().getFullYear();
+let calMonth = new Date().getMonth();
+
+// ════════════════════════════════════════════
+//  PAGE ROUTING
+// ════════════════════════════════════════════
+function showPage(page){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  if(page==='home') document.getElementById('home-page').classList.add('active');
+  else if(page==='service') document.getElementById('service-page-view').classList.add('active');
+  else if(page==='admin'){
+    document.getElementById('admin-page-view').classList.add('active');
+    renderAdminDashboard();
+  }
+  window.scrollTo(0,0);
+}
+
+// ════════════════════════════════════════════
+//  RENDER CATEGORIES
+// ════════════════════════════════════════════
+function renderCategories(){
+  const grid = document.getElementById('cats-grid');
+  grid.innerHTML = CATEGORIES.map(cat=>`
+    <div class="cat-card" style="--cat-color:${cat.color};--cat-bg:${cat.bg}" onclick="openCategoryBooking('${cat.id}')">
+      <div class="cat-icon">${cat.icon}</div>
+      <div class="cat-name">${cat.name}</div>
+      <div class="cat-count">${cat.services.length} serviços disponíveis</div>
+      <div class="cat-services-preview">
+        ${cat.services.slice(0,3).map(s=>`<span class="cat-tag">${s}</span>`).join('')}
+        ${cat.services.length>3?`<span class="cat-tag">+${cat.services.length-3}</span>`:''}
+      </div>
+    </div>
+  `).join('');
+}
+
+function openCategoryBooking(catId){
+  openBooking(catId);
+}
+
+// ════════════════════════════════════════════
+//  SEARCH
+// ════════════════════════════════════════════
+function handleSearch(val){
+  const box = document.getElementById('search-results');
+  if(!val.trim()){box.classList.add('hidden');return}
+  const q = val.toLowerCase();
+  const results = [];
+  CATEGORIES.forEach(cat=>{
+    cat.services.forEach(s=>{
+      if(s.toLowerCase().includes(q)||cat.name.toLowerCase().includes(q)){
+        results.push({cat:cat.name,catId:cat.id,icon:cat.icon,service:s});
+      }
+    });
+  });
+  if(!results.length){box.classList.add('hidden');return}
+  box.innerHTML = results.slice(0,8).map(r=>`
+    <div class="search-result-item" onmousedown="selectSearchResult('${r.catId}','${r.service}')">
+      <span style="font-size:1.1rem">${r.icon}</span>
+      <div><div class="sri-cat">${r.cat}</div><div class="sri-name">${r.service}</div></div>
+    </div>
+  `).join('');
+  box.classList.remove('hidden');
+}
+
+function hideSearchResults(){
+  document.getElementById('search-results').classList.add('hidden');
+}
+
+function selectSearchResult(catId, service){
+  document.getElementById('search-input').value = service;
+  hideSearchResults();
+  openBooking(catId, service);
+}
+
+// ════════════════════════════════════════════
+//  FAQ
+// ════════════════════════════════════════════
+function renderFAQ(){
+  document.getElementById('faq-grid').innerHTML = FAQS.map((f,i)=>`
+    <div class="faq-item" id="faq-${i}">
+      <div class="faq-q" onclick="toggleFAQ(${i})">
+        <span style="flex:1">${f.q}</span>
+        <span class="faq-icon">+</span>
+      </div>
+      <div class="faq-a">${f.a}</div>
+    </div>
+  `).join('');
+}
+
+function toggleFAQ(i){
+  const item = document.getElementById('faq-'+i);
+  const wasOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(el=>el.classList.remove('open'));
+  if(!wasOpen) item.classList.add('open');
+}
+
+// ════════════════════════════════════════════
+//  BOOKING MODAL
+// ════════════════════════════════════════════
+function openBooking(catId='', service=''){
+  booking = {step:1, type:'', catId:catId||'', service:service||'', date:'', time:'', name:'', email:'', phone:''};
+  document.getElementById('booking-overlay').classList.remove('hidden');
+  document.body.style.overflow='hidden';
+  renderBookingStep();
+}
+
+function closeBooking(){
+  document.getElementById('booking-overlay').classList.add('hidden');
+  document.body.style.overflow='';
+}
+
+function closeBookingOnOverlay(e){
+  if(e.target===document.getElementById('booking-overlay')) closeBooking();
+}
+
+function renderProgress(){
+  const steps = document.getElementById('progress-steps');
+  steps.innerHTML = STEPS.map((label,i)=>{
+    const n = i+1;
+    const state = n < booking.step ? 'done' : n===booking.step ? 'active' : 'pending';
+    return `
+      <div class="ps">
+        <div class="ps-dot ${state}">${state==='done'?'✓':n}</div>
+        <span class="ps-label ${state==='active'?'active':''}">${label}</span>
+      </div>
+      ${n<STEPS.length?`<div class="ps-line ${n<booking.step?'done':''}"></div>`:''}
+    `;
+  }).join('');
+}
+
+function renderBookingStep(){
+  renderProgress();
+  const body = document.getElementById('bm-body');
+  const footer = document.getElementById('bm-footer');
+
+  if(booking.step===1){
+    document.getElementById('bm-title').textContent='Marcar Atendimento';
+    body.innerHTML=`
+      <div class="step-heading">Como prefere ser atendido?</div>
+      <div class="step-sub">Escolha o tipo de atendimento mais conveniente para si.</div>
+      <div class="type-cards">
+        <div class="type-card ${booking.type==='presencial'?'selected':''}" onclick="selectType('presencial')">
+          <div class="tc-icon">📍</div>
+          <div class="tc-name">Presencial</div>
+          <div class="tc-desc">Venha ao nosso balcão em Lisboa</div>
+        </div>
+        <div class="type-card ${booking.type==='videocall'?'selected':''}" onclick="selectType('videocall')">
+          <div class="tc-icon">💻</div>
+          <div class="tc-name">Videochamada</div>
+          <div class="tc-desc">Atendimento remoto por vídeo</div>
+        </div>
+        <div class="type-card ${booking.type==='contacto'?'selected':''}" onclick="selectType('contacto')">
+          <div class="tc-icon">📞</div>
+          <div class="tc-name">Pedido de contacto</div>
+          <div class="tc-desc">Ligamos-lhe quando preferir</div>
+        </div>
+      </div>`;
+    footer.innerHTML=`
+      <div></div>
+      <button class="btn btn-primary" onclick="nextStep()" ${!booking.type?'disabled':''}>Continuar →</button>`;
+  }
+
+  else if(booking.step===2){
+    const cat = CATEGORIES.find(c=>c.id===booking.catId);
+    body.innerHTML=`
+      <div class="step-heading">Que serviço precisa?</div>
+      <div class="step-sub">Selecione a categoria e depois o serviço específico.</div>
+      <div style="margin-bottom:1rem">
+        <label style="font-size:.78rem;font-weight:600;color:var(--navy);display:block;margin-bottom:.35rem">Categoria</label>
+        <select onchange="booking.catId=this.value;renderBookingStep()" style="width:100%;padding:.7rem 1rem;border:1.5px solid var(--border);border-radius:var(--r-sm);font-size:.9rem;outline:none">
+          <option value="">Selecione uma categoria</option>
+          ${CATEGORIES.map(c=>`<option value="${c.id}" ${booking.catId===c.id?'selected':''}>${c.icon} ${c.name}</option>`).join('')}
+        </select>
+      </div>
+      ${cat?`
+        <div class="service-list">
+          ${cat.services.map(s=>`
+            <div class="service-list-item ${booking.service===s?'selected':''}" onclick="selectService('${s}')">
+              <div class="sli-icon">${cat.icon}</div>
+              <div><div class="sli-name">${s}</div><div class="sli-cat">${cat.name}</div></div>
+            </div>
+          `).join('')}
+        </div>`:'<p style="font-size:.84rem;color:var(--slate)">Selecione uma categoria para ver os serviços disponíveis.</p>'}`;
+    footer.innerHTML=`
+      <button class="btn btn-outline" onclick="prevStep()">← Anterior</button>
+      <button class="btn btn-primary" onclick="nextStep()" ${!booking.service?'disabled':''}>Continuar →</button>`;
+  }
+
+  else if(booking.step===3){
+    if(booking.type==='contacto'){
+      booking.step=5; renderBookingStep(); return;
+    }
+    body.innerHTML=`
+      <div class="step-heading">Escolha a data</div>
+      <div class="step-sub">Dias disponíveis para o atendimento selecionado.</div>
+      <div id="calendar-widget"></div>`;
+    footer.innerHTML=`
+      <button class="btn btn-outline" onclick="prevStep()">← Anterior</button>
+      <button class="btn btn-primary" onclick="nextStep()" ${!booking.date?'disabled':''}>Continuar →</button>`;
+    renderCalendar();
+  }
+
+  else if(booking.step===4){
+    body.innerHTML=`
+      <div class="step-heading">Escolha a hora</div>
+      <div class="step-sub">Horários disponíveis para ${formatDate(booking.date)}.</div>
+      <div class="time-grid" id="time-grid"></div>`;
+    footer.innerHTML=`
+      <button class="btn btn-outline" onclick="prevStep()">← Anterior</button>
+      <button class="btn btn-primary" onclick="nextStep()" ${!booking.time?'disabled':''}>Continuar →</button>`;
+    renderTimeSlots();
+  }
+
+  else if(booking.step===5){
+    body.innerHTML=`
+      <div class="step-heading">Os seus dados</div>
+      <div class="step-sub">Preencha os seus dados para confirmar a marcação.</div>
+      <div class="form-2col">
+        <div class="form-row"><label>Nome completo *</label><input id="f-name" type="text" placeholder="O seu nome" value="${booking.name}" oninput="booking.name=this.value"/></div>
+        <div class="form-row"><label>Telefone *</label><input id="f-phone" type="tel" placeholder="+351 9XX XXX XXX" value="${booking.phone}" oninput="booking.phone=this.value"/></div>
+      </div>
+      <div class="form-row"><label>Email *</label><input id="f-email" type="email" placeholder="email@exemplo.pt" value="${booking.email}" oninput="booking.email=this.value"/></div>
+      <div class="form-row"><label>NIF (opcional)</label><input type="text" placeholder="123 456 789"/></div>
+      <div class="form-row"><label>Notas adicionais</label><textarea rows="2" placeholder="Informação adicional que considere relevante..."></textarea></div>`;
+    footer.innerHTML=`
+      <button class="btn btn-outline" onclick="prevStep()">← Anterior</button>
+      <button class="btn btn-primary" onclick="submitBooking()">Confirmar Marcação ✓</button>`;
+  }
+
+  else if(booking.step===6){
+    const ref = 'BCE-2025-' + Math.floor(1000+Math.random()*9000);
+    const typeLabel = {presencial:'📍 Presencial',videocall:'💻 Videochamada',contacto:'📞 Pedido de contacto'}[booking.type]||booking.type;
+    body.innerHTML=`
+      <div class="confirm-box">
+        <div class="confirm-icon">✅</div>
+        <h2 style="font-size:1.2rem;font-weight:800;color:var(--navy);margin-bottom:.35rem">Marcação confirmada!</h2>
+        <p style="font-size:.9rem;color:var(--slate)">Enviámos a confirmação para <strong>${booking.email||'o seu email'}</strong>.</p>
+        <div class="confirm-ref">${ref}</div>
+        <div class="bm-summary" style="margin-top:1.5rem;text-align:left">
+          <div class="bm-summary-row"><span>Tipo:</span><span>${typeLabel}</span></div>
+          <div class="bm-summary-row"><span>Serviço:</span><span>${booking.service}</span></div>
+          ${booking.date?`<div class="bm-summary-row"><span>Data:</span><span>${formatDate(booking.date)}</span></div>`:''}
+          ${booking.time?`<div class="bm-summary-row"><span>Hora:</span><span>${booking.time}</span></div>`:''}
+          <div class="bm-summary-row"><span>Nome:</span><span>${booking.name}</span></div>
+        </div>
+        <div class="confirm-info">
+          <p>📧 Vai receber um email com todos os detalhes.<br>📲 Enviaremos um lembrete SMS 24h antes.<br>❓ Dúvidas? Contacte-nos via WhatsApp.</p>
+        </div>
+      </div>`;
+    footer.innerHTML=`
+      <button class="btn btn-outline" onclick="closeBooking()">Fechar</button>
+      <button class="btn btn-green" onclick="openWhatsApp()">💬 Falar no WhatsApp</button>`;
+  }
+}
+
+function selectType(t){
+  booking.type=t;
+  document.querySelectorAll('.type-card').forEach(c=>c.classList.remove('selected'));
+  event.currentTarget.classList.add('selected');
+  document.querySelector('#bm-footer .btn-primary').removeAttribute('disabled');
+}
+
+function selectService(s){
+  booking.service=s;
+  renderBookingStep();
+}
+
+function nextStep(){
+  if(booking.step<6){booking.step++;renderBookingStep()}
+}
+
+function prevStep(){
+  if(booking.step>1){
+    if(booking.step===5&&booking.type==='contacto'){booking.step=2;}
+    else booking.step--;
+    renderBookingStep();
+  }
+}
+
+function submitBooking(){
+  if(!booking.name||!booking.phone||!booking.email){
+    alert('Por favor preencha os campos obrigatórios (nome, telefone e email).');return;
+  }
+  booking.step=6;renderBookingStep();
+}
+
+// ════════════ CALENDAR ════════════
+function renderCalendar(){
+  const now = new Date();
+  const d = new Date(calYear, calMonth, 1);
+  const daysInMonth = new Date(calYear, calMonth+1, 0).getDate();
+  const firstDay = (d.getDay()+6)%7; // Mon=0
+  const months = ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'];
+  const days = ['Seg','Ter','Qua','Qui','Sex','Sáb','Dom'];
+  let html = `
+    <div class="cal-header">
+      <button class="cal-nav" onclick="changeMonth(-1)">‹</button>
+      <span class="cal-month">${months[calMonth]} ${calYear}</span>
+      <button class="cal-nav" onclick="changeMonth(1)">›</button>
+    </div>
+    <div class="cal-grid">
+      ${days.map(d=>`<div class="cal-day-label">${d}</div>`).join('')}
+      ${Array(firstDay).fill('<div class="cal-day empty"></div>').join('')}`;
+  for(let day=1;day<=daysInMonth;day++){
+    const date = new Date(calYear,calMonth,day);
+    const dateStr = `${calYear}-${String(calMonth+1).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
+    const isPast = date < new Date(now.getFullYear(),now.getMonth(),now.getDate());
+    const isWk = date.getDay()===0||date.getDay()===6;
+    const isToday = dateStr===`${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`;
+    const isSelected = booking.date===dateStr;
+    let cls = 'cal-day';
+    if(isPast||isWk) cls+=' past';
+    else { cls+=' available'; if(isToday) cls+=' today'; if(isSelected) cls+=' selected'; }
+    html += `<div class="${cls}" ${!isPast&&!isWk?`onclick="selectDate('${dateStr}')"`:''}>${day}</div>`;
+  }
+  html += '</div>';
+  document.getElementById('calendar-widget').innerHTML = html;
+}
+
+function changeMonth(dir){
+  calMonth+=dir;
+  if(calMonth<0){calMonth=11;calYear--;}
+  if(calMonth>11){calMonth=0;calYear++;}
+  renderCalendar();
+}
+
+function selectDate(dateStr){
+  booking.date=dateStr;
+  renderCalendar();
+  document.querySelector('#bm-footer .btn-primary').removeAttribute('disabled');
+}
+
+function formatDate(s){
+  if(!s) return '';
+  const [y,m,d]=s.split('-');
+  const months=['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'];
+  return `${parseInt(d)} de ${months[parseInt(m)-1]} de ${y}`;
+}
+
+// ════════════ TIME SLOTS ════════════
+function renderTimeSlots(){
+  const slots = ['09:00','09:30','10:00','10:30','11:00','11:30','14:00','14:30','15:00','15:30','16:00','16:30','17:00','17:30'];
+  const taken = ['10:00','11:00','14:30','16:00'];
+  document.getElementById('time-grid').innerHTML = slots.map(t=>{
+    const isTaken = taken.includes(t);
+    const isSelected = booking.time===t;
+    return `<div class="time-slot ${isTaken?'taken':isSelected?'selected':'available'}" ${!isTaken?`onclick="selectTime('${t}')"`:''}>${t}</div>`;
+  }).join('');
+}
+
+function selectTime(t){
+  booking.time=t;
+  renderTimeSlots();
+  document.querySelector('#bm-footer .btn-primary').removeAttribute('disabled');
+}
+
+// ════════════════════════════════════════════
+//  SERVICE PAGE
+// ════════════════════════════════════════════
+function openServicePage(catId, serviceName){
+  const cat = CATEGORIES.find(c=>c.id===catId);
+  document.getElementById('sp-content').innerHTML=`
+    <span class="badge badge-blue" style="margin-bottom:.75rem">${cat.icon} ${cat.name}</span>
+    <h1>${serviceName}</h1>
+    <div class="sp-meta">
+      <span class="sp-meta-item">⏱ 30–45 min</span>
+      <span class="sp-meta-item">📍 Presencial & Online</span>
+      <span class="sp-meta-item">✅ Resposta em 24h</span>
+    </div>
+    <p class="sp-desc">Tratamos de todo o processo de ${serviceName} de forma simples, rápida e sem burocracias desnecessárias. A nossa equipa especializada garante que tudo é tratado corretamente à primeira.</p>
+    <div class="sp-docs">
+      <h3>📋 Documentos necessários</h3>
+      <ul class="sp-doc-list">
+        <li>Bilhete de Identidade / Cartão de Cidadão</li>
+        <li>Número de Identificação Fiscal (NIF)</li>
+        <li>Comprovativo de morada (últimos 3 meses)</li>
+        <li>Documentação específica do serviço (a confirmar)</li>
+      </ul>
+    </div>`;
+  document.getElementById('sp-sidebar').innerHTML=`
+    <div class="sp-price">Sob consulta <span>/ por serviço</span></div>
+    <p style="font-size:.78rem;color:var(--slate-l);margin-top:.25rem">Primeira consulta gratuita</p>
+    <div class="sp-card-info">
+      <div class="sci">⏱ Duração estimada: 30–45 min</div>
+      <div class="sci">📅 Disponível: Seg–Sex 09–18h</div>
+      <div class="sci">💻 Modalidade: Presencial ou Online</div>
+    </div>
+    <button class="btn btn-primary" style="width:100%;margin-top:1rem" onclick="openBooking('${catId}','${serviceName}')">📅 Marcar Atendimento</button>
+    <button class="btn btn-outline" style="width:100%;margin-top:.5rem" onclick="openWhatsApp()">💬 Falar no WhatsApp</button>`;
+  showPage('service');
+}
+
+// ════════════════════════════════════════════
+//  ADMIN PANEL
+// ════════════════════════════════════════════
+const MOCK_BOOKINGS = [
+  {ref:'BCE-2025-1042',name:'Maria Sousa',service:'NIF',date:'2025-06-13',time:'09:30',type:'Presencial',status:'confirmada'},
+  {ref:'BCE-2025-1041',name:'João Fernandes',service:'Constituição de Empresas',date:'2025-06-13',time:'10:00',type:'Videochamada',status:'pendente'},
+  {ref:'BCE-2025-1040',name:'Ana Costa',service:'Certidão Energética',date:'2025-06-12',time:'14:30',type:'Presencial',status:'confirmada'},
+  {ref:'BCE-2025-1039',name:'Carlos Lima',service:'Registo Automóvel',date:'2025-06-12',time:'11:00',type:'Presencial',status:'confirmada'},
+  {ref:'BCE-2025-1038',name:'Sofia Martins',service:'RCBE',date:'2025-06-11',time:'15:00',type:'Videochamada',status:'cancelada'},
+  {ref:'BCE-2025-1037',name:'Pedro Alves',service:'Autorização de Residência',date:'2025-06-11',time:'09:00',type:'Presencial',status:'confirmada'},
+];
+
+function renderAdminDashboard(){
+  document.getElementById('admin-content').innerHTML=`
+    <div class="admin-topbar">
+      <h1>Dashboard</h1>
+      <div style="display:flex;gap:.75rem">
+        <button class="btn btn-outline" style="font-size:.8rem">📊 Exportar</button>
+        <button class="btn btn-primary" style="font-size:.8rem" onclick="openBooking()">+ Nova Marcação</button>
+      </div>
+    </div>
+    <div class="admin-stats">
+      <div class="stat-card"><div class="stat-label">Marcações Hoje</div><div class="stat-value">12</div><div class="stat-delta up">↑ 3 vs ontem</div></div>
+      <div class="stat-card"><div class="stat-label">Esta Semana</div><div class="stat-value">47</div><div class="stat-delta up">↑ 12%</div></div>
+      <div class="stat-card"><div class="stat-label">Este Mês</div><div class="stat-value">183</div><div class="stat-delta up">↑ 8%</div></div>
+      <div class="stat-card"><div class="stat-label">Taxa Confirmação</div><div class="stat-value">94%</div><div class="stat-delta up">↑ 2pp</div></div>
+    </div>
+    <div class="admin-table">
+      <div class="table-header">
+        <span class="table-title">Marcações Recentes</span>
+        <input type="text" placeholder="Pesquisar..." style="padding:.4rem .8rem;border:1px solid var(--border);border-radius:var(--r-sm);font-size:.8rem;outline:none"/>
+      </div>
+      <table>
+        <thead><tr><th>Referência</th><th>Cliente</th><th>Serviço</th><th>Data</th><th>Hora</th><th>Tipo</th><th>Estado</th><th>Ações</th></tr></thead>
+        <tbody>${MOCK_BOOKINGS.map(b=>`
+          <tr>
+            <td style="font-family:monospace;font-size:.8rem">${b.ref}</td>
+            <td>${b.name}</td>
+            <td>${b.service}</td>
+            <td>${formatDate(b.date)}</td>
+            <td>${b.time||'—'}</td>
+            <td>${b.type}</td>
+            <td><span class="status-badge status-${b.status}">${b.status}</span></td>
+            <td><button class="action-btn">Ver</button> <button class="action-btn">Editar</button></td>
+          </tr>`).join('')}
+        </tbody>
+      </table>
+    </div>`;
+}
+
+function renderAdminServices(){
+  const allServices = CATEGORIES.flatMap(c=>c.services.map(s=>({cat:c.name,icon:c.icon,service:s})));
+  document.getElementById('admin-content').innerHTML=`
+    <div class="admin-topbar">
+      <h1>Serviços</h1>
+      <button class="btn btn-primary" style="font-size:.8rem">+ Novo Serviço</button>
+    </div>
+    <div class="admin-table">
+      <div class="table-header"><span class="table-title">Todos os Serviços (${allServices.length})</span></div>
+      <table>
+        <thead><tr><th>Categoria</th><th>Serviço</th><th>Duração</th><th>Modalidades</th><th>Estado</th><th>Ações</th></tr></thead>
+        <tbody>${allServices.map(s=>`
+          <tr>
+            <td>${s.icon} ${s.cat}</td>
+            <td style="font-weight:600">${s.service}</td>
+            <td>30 min</td>
+            <td><span class="badge badge-blue" style="font-size:.6rem">Presencial</span> <span class="badge badge-green" style="font-size:.6rem">Online</span></td>
+            <td><span class="status-badge status-confirmada">Ativo</span></td>
+            <td><button class="action-btn">Editar</button></td>
+          </tr>`).join('')}
+        </tbody>
+      </table>
+    </div>`;
+}
+
+function renderAdminSchedule(){
+  const hours = ['09:00','09:30','10:00','10:30','11:00','11:30','12:00','14:00','14:30','15:00','15:30','16:00','16:30','17:00','17:30','18:00'];
+  const days = ['Segunda','Terça','Quarta','Quinta','Sexta'];
+  document.getElementById('admin-content').innerHTML=`
+    <div class="admin-topbar"><h1>Gestão de Horários</h1><button class="btn btn-primary" style="font-size:.8rem">Guardar Alterações</button></div>
+    <div class="admin-table" style="overflow-x:auto">
+      <div class="table-header"><span class="table-title">Disponibilidade Semanal</span></div>
+      <table>
+        <thead><tr><th>Hora</th>${days.map(d=>`<th>${d}</th>`).join('')}</tr></thead>
+        <tbody>${hours.map(h=>`
+          <tr>
+            <td style="font-weight:600;font-family:monospace">${h}</td>
+            ${days.map(()=>`<td><input type="checkbox" checked style="accent-color:var(--blue)"/></td>`).join('')}
+          </tr>`).join('')}
+        </tbody>
+      </table>
+    </div>`;
+}
+
+function switchAdmin(el, section){
+  document.querySelectorAll('.admin-nav-item').forEach(i=>i.classList.remove('active'));
+  el.classList.add('active');
+  if(section==='dashboard') renderAdminDashboard();
+  else if(section==='marcacoes'){
+    document.getElementById('admin-content').innerHTML=`<div class="admin-topbar"><h1>Marcações</h1></div>`;
+    renderAdminDashboard();
+  }
+  else if(section==='servicos') renderAdminServices();
+  else if(section==='horarios') renderAdminSchedule();
+  else{
+    document.getElementById('admin-content').innerHTML=`
+      <div class="admin-topbar"><h1>${el.textContent.trim()}</h1></div>
+      <div style="background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:3rem;text-align:center;color:var(--slate-l)">
+        <div style="font-size:2.5rem;margin-bottom:1rem">🚧</div>
+        <p>Esta secção está em desenvolvimento.</p>
+      </div>`;
+  }
+}
+
+// ════════════════════════════════════════════
+//  UTILS
+// ════════════════════════════════════════════
+function openWhatsApp(){
+  window.open('https://wa.me/351964712854?text=Olá!%20Gostaria%20de%20obter%20informações%20sobre%20os%20vossos%20serviços.','_blank');
+}
+
+function openMaps(){
+  window.open('https://www.google.com/maps/place//data=!4m2!3m1!1s0x9e9909c09b516f5:0x2c9614f17aef8db5','_blank');
+}
+
+function submitContact(){
+  alert('✅ Mensagem enviada! Responderemos em menos de 2 horas úteis.');
+}
+
+function toggleMobileMenu(){}
+
+// Acesso admin secreto: Ctrl + Shift + A
+document.addEventListener('keydown', function(e){
+  if(e.ctrlKey && e.shiftKey && e.key === 'A'){
+    showPage('admin');
+  }
+});
+
+function switchDocTab(el, id){
+  document.querySelectorAll('.doc-tab').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.doc-content').forEach(c=>c.classList.remove('active'));
+  el.classList.add('active');
+  const target = document.getElementById('doc-'+id);
+  if(target) target.classList.add('active');
+}
+
+// ════════════════════════════════════════════
+//  INIT
+// ════════════════════════════════════════════
+renderCategories();
+renderFAQ();
+</script>
+
+
+</body></html>
